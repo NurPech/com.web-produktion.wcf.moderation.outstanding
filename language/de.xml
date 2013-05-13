@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<!-- wcf.moderation -->
+	<category name="wcf.moderation">
+		<item name="wcf.moderation.type.com.web-produktion.wpbt.moderation.outstanding"><![CDATA[Ausstehend]]></item>
+	</category>
+	
+	<!-- wcf.moderation.outstanding -->
+	<category name="wcf.moderation.outstanding">
+		<item name="wcf.moderation.outstanding"><![CDATA[Ausstehend]]></item>
+		<item name="wcf.moderation.outstanding.details"><![CDATA[Ausstehend]]></item>
+		<item name="wcf.moderation.outstanding.content"><![CDATA[Ausstehender Inhalt]]></item>
+		<item name="wcf.moderation.outstanding.markAsDoneContent"><![CDATA[Als Erledigt markieren]]></item>
+		<item name="wcf.moderation.outstanding.markAsDoneContent.confirmMessage"><![CDATA[Wollen Sie diesen Inhalt wirklich als Erledigt markieren?]]></item>
+	</category>
+</language>

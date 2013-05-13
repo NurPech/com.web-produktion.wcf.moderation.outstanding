@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package name="com.web-produktion.wcf.moderation.outstanding" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+	<packageinformation>
+		<packagename><![CDATA[Moderation Typ - Outstanding]]></packagename>
+		<packagedescription><![CDATA[]]>
+		</packagedescription>
+		<version>2.0.0 Alpha 1</version>
+		<date>2013-05-12</date>
+	</packageinformation>
+
+	<authorinformation>
+		<author><![CDATA[web-produktion]]></author>
+		<authorurl><![CDATA[http://www.web-produktion.com]]></authorurl>
+	</authorinformation>
+
+	<requiredpackages>
+		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="1.0.0 Alpha 1">com.woltlab.wcf.moderation</requiredpackage>
+	</requiredpackages>
+
+	<instructions type="install">
+		<!-- tar -->
+		<instruction type="file">files.tar</instruction>
+		<instruction type="template">templates.tar</instruction>
+
+		<!-- xml -->
+		<instruction type="objectTypeDefinition">objectTypeDefinition.xml</instruction>
+		<instruction type="objectType">objectType.xml</instruction>
+
+		<!--  language -->
+		<instruction type="language">language/*.xml</instruction>
+	</instructions>
+</package>

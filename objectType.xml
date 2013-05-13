@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/object-type.xsd">
+	<import>
+		<!-- moderation type -->
+		<type>
+			<name>com.web-produktion.wcf.moderation.outstanding</name>
+			<definitionname>com.woltlab.wcf.moderation.type</definitionname>
+			<classname>wcf\system\moderation\queue\ModerationQueueOutstandingManager</classname>
+		</type>
+		<!-- /moderation type -->
+	</import>
+</data>
