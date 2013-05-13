@@ -56,8 +56,26 @@
 				<dd>{@$queue->lastChangeTime|time}</dd>
 			</dl>
 		{/if}
+		<dl>
+			<dt>{lang}wcf.moderation.assignedUser{/lang}</dt>
+			<dd>
+				<ul>
+					{if $assignedUserID && ($assignedUserID != $__wcf->getUser()->userID)}
+						<li><label><input type="radio" name="assignedUserID" value="{@$assignedUserID}" checked="checked" /> {$queue->assignedUsername}</label></li>
+					{/if}
+					<li><label><input type="radio" name="assignedUserID" value="{@$__wcf->getUser()->userID}"{if $assignedUserID == $__wcf->getUser()->userID} checked="checked"{/if} /> {$__wcf->getUser()->username}</label></li>
+					<li><label><input type="radio" name="assignedUserID" value="0"{if !$assignedUserID} checked="checked"{/if} /> {lang}wcf.moderation.assignedUser.nobody{/lang}</label></li>
+				</ul>
+			</dd>
+		</dl>
+		{if $queue->assignedUser}
+			<dl>
+				
+				<dd><a href="{link controller='User' id=$assignedUserID}{/link}" class="userLink" data-user-id="{@$assignedUserID}">{$queue->assignedUsername}</a></dd>
+			</dl>
+		{/if}
 		
-		{event name='outstandingDetails'}
+		{event name='detailsFields'}
 		
 		<dl>
 			<dt>{lang}wcf.moderation.comment{/lang}</dt>
@@ -68,6 +86,8 @@
 			<input type="submit" value="{lang}wcf.global.button.submit{/lang}" />
 		</div>
 	</fieldset>
+	
+	{event name='fieldsets'}
 </form>
 
 <fieldset class="marginTop">
