@@ -3,6 +3,10 @@
  * @copyright	2010 - 2013 web-produktion
  * @license	GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  */
+
+/**
+ * Namespace for outstanding related classes.
+ */
 WCF.Moderation.Outstanding = { };
 
 /**
