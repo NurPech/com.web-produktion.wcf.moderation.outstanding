@@ -2,7 +2,7 @@
 <language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
 	<!-- wcf.moderation -->
 	<category name="wcf.moderation">
-		<item name="wcf.moderation.type.com.web-produktion.wpbt.moderation.outstanding"><![CDATA[Ausstehend]]></item>
+		<item name="wcf.moderation.type.com.web-produktion.wcf.moderation.outstanding"><![CDATA[Ausstehend]]></item>
 	</category>
 	
 	<!-- wcf.moderation.outstanding -->
