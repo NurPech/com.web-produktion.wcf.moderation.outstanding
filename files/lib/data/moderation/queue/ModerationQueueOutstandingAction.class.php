@@ -33,7 +33,7 @@ class ModerationQueueOutstandingAction extends ModerationQueueAction {
 	 */
 	public function validateMarkAsDoneContent() {
 		$this->queue = $this->getSingleObject();
-		if (! $this->queue->getProduct()->getPermission('canMarkAsDoneIssue')) {
+		if (! $this->queue->canMarkAsDone()) {
 			throw new PermissionDeniedException();
 		}
 	}
